@@ -28,7 +28,7 @@ type Movie struct {
 	Year  int    `json:"year,omitempty"`
 }
 
-// This function reads the values from the file and unmarshalls it into its corresponding struct struct
+// This function reads the values from the file and unmarshalls it into its corresponding struct
 func loadJSON(filePath string, v interface{}) error {
 	file, err := ioutil.ReadFile(filePath)
 	if err != nil {
@@ -60,7 +60,7 @@ func getStarRatingFromScore(score, max float64) string {
 	return result
 }
 
-func composeTweet(movieTitle string, year string, review string, score float64) string {
+func composeTweet(movieTitle, year, review string, score float64) string {
 
 	stars := getStarRatingFromScore(score, maxScore) // assuming 100 is the maximum score
 	tweet := fmt.Sprintf("%s%s: %s %s", movieTitle, year, review, stars)
