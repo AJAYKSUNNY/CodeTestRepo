@@ -45,7 +45,7 @@ Usage:
 
     To run test files
         Install testing package
-            go get github.com/stretchr/testify or run go mod vendor
+            go get github.com/stretchr/testify
             RUN the below command to run the test files,it should give an ok response
                 go test
             To see the code coverage run , it will show the percentage of code covered in the package

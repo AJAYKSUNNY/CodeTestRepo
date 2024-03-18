@@ -109,7 +109,7 @@ func main() {
 	// Process reviews and output tweets
 	for i, review := range reviews {
 		movieYear := ""
-		movie, _ := movieTitles[review.Title]
+		movie := movieTitles[review.Title]
 		if movie.Year != 0 {
 			movieYear = " (" + strconv.Itoa(movie.Year) + ")"
 		}
