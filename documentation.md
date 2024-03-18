@@ -35,7 +35,6 @@ This command-line application, written in Go, reads movie review data and compos
         ```bash
         go mod init github.com/yourusername/myproject
         go run main.go reviews.json movies.json
-        ```
 
 - Running Test Files
 
@@ -43,10 +42,15 @@ This command-line application, written in Go, reads movie review data and compos
 
         1. Install the testing package:
 
+            ```bash
+            go get github.com/stretchr/testify
+            ```
 
         2. Run the below command to execute the test files. It should display an "ok" response if all tests pass:
         
+            ```bash
             go test -cover ./...
+            ```
 
         3. To view the code coverage, run the following command. It will show the percentage of code covered in the package:
 
